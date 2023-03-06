@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RESUME</title>
+
+    <!--Подключение стилей CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = cssPath)}}">
+
+
+    <!--Подключение шрифтов https://fonts.google.com/-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Inconsolata:wght@200&
+    family=Merriweather:wght@300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!--Вставка иконки-->
+    <link rel="shortcut icon" href="img/MyLogo.ico" type="image/x-icon">
+
+    <!--Подключение иконочных шрифтов-->
+    <script src="https://kit.fontawesome.com/60c7856e56.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="frame">
+
+        <!--<h1>Honcharov Roman</h1>-->
+        <h1>{{name}}</h1>
+
+        <hr>
+
+        <!--Якорная ссылка-->
+        <span class="content">
+            <a href="#MyData">My data</a>
+            <a href="#ContactInformation">Contact Information</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Education">Education</a>
+            <a href="#LanguageKnowledge">Language knowledge</a>
+            <a href="#AdditionalInformation">Additional information</a> 
+        </span>
+                
+        <p id="MyData"></p>
+        <!--Вставка картинки-->
+        <img src="{{url_for('static', filename = 'img/MyProfile.png')}}" alt="My photo">
+
+        <h3>Process-engineer</h3>
+            <p>full time job</p>
+
+                <pre>
+<span class="LightHue">Age:</span>                           34years<br>
+<span class="LightHue">City of residence:</span>    Dnipro<br>
+<span class="LightHue">Ready to work:</span>        Other countries
+                </pre>
+
+        <p id="ContactInformation"></p>
+        <h3>Contact Information</h3>
+
+                <pre>
+<!--<span>Phone: 099-248-47-98<br></span>-->
+<span>Phone: {{phoneNumber}}<br></span>
+<!--<span>Mail:  romagnhp@gmail.com</span>-->
+<span>Mail:  {{mail}}</span>
+                </pre>
+            <div>
+                <!--ссылка на соц.сети-->
+                <a href="https://www.facebook.com/roma.goncharov.37" target="blank">
+                    <img class="frame" src="{{url_for('static', filename = 'img/facebook.svg')}}" >
+                </a>
+                <a href="https://www.linkedin.com/in/roman-honcharov-29664015a/" target="blank">
+                    <img class="frame" src="{{url_for('static', filename = 'img/instagram.svg')}}">
+                </a>
+                <a href="https://www.instagram.com/romagnhp/" target="blank">
+                    <img class="frame" src="{{url_for('static', filename = 'img/linkedin.svg')}}">
+                </a>
+            </div>
+
+        <p id="Experience"></p>
+        <h3>Experience</h3>
+        <ol type="I">
+            <li><p>Otis-tarda,Dnipro</p>
+                <p>from 06.2014 to 06.2022 <b>(9 years)</b></p>
+                <p>Process-engineer</p>
+                <p>Writing technology for processing parts in small-scale production. Work in 1C</p>
+            </li>
+            <li><p>"PZTO" Poltava plant of technological equipment</p>
+                <p>from 04.2010 to 06.2014 <b>(4 years 2month)</b></p>
+                <p>Process-engineer</p>
+                <p>Work at SolidCAM_2010 environment or directly through the rack and setting up 4-axis machine (HEIDENHAIN rack)<br>
+                In rare cases, creation of a 3D model of a part (SolidWorks_2010 environment, Compass 3D_10) Geometric calculation of the main types of gears (Compass 3D_10 environment)<br>
+                Design and manufacture of equipment. Product control.</p>
+            </li>    
+            
+        </ol>
+
+         <hr>
+
+         <p id="Education"></p>
+         <h3>Education</h3>   
+            <p>"PNTU" Poltava National Technical University named after Y. Kondratyuk</p>
+            <p> Electromechanical, mechanical engineer, Poltava</p> 
+            <p> Higher, from 2004 to 2009 <b>(4 years 10 months)</b></p>  
+            <br>
+
+         <p id="LanguageKnowledge"></p>
+         <h3>Language knowledge</h3>   
+                <p>English B2</p>
+                <br>
+
+         <p id="AdditionalInformation"></p>
+         <h3>Additional information</h3>
+        <ul>
+                <li>Driver license C,B</li>
+                <li>Taking 3_rd place in theoretical mechanics in the city of Poltava.</li>
+                <li>Playing basketball</li>
+        </ul>   
+              
+    </div>     
+
+</body>
+</html>

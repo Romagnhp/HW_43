@@ -1,0 +1,70 @@
+/*Своиства шрифтов*/
+*{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Задний фон док. */
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+    /* Рамка док. */
+    div{
+        margin: 20px 20px 20px 70px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+        /* Выравнивание текста по центру*/
+        h1{
+            text-align: center;
+        }
+
+        /* Изменени прозрачности текста */
+        .LightHue{
+            color: rgb(0,0,0,0.5);
+        }
+
+        /* Маркированный список */
+        ul{
+            list-style-type: circle;
+        }
+
+        /* Р-р. картинки,отступы */
+        img{
+            height: 100px;
+            padding-top: 20px;
+        }
+
+        /* Стилизация ссылок на соц. сети */
+        a{
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            width: 60px;
+            font-size: 30px;
+            transition: all, linear, 1s;
+        }
+
+        /* аниамация ссылок на соц. сети через псевдо селектор */
+        a :hover{
+            transform: scale(2);
+
+        }
+
+        /* стилизация якорных ссылок */
+        .content a {
+            font-size: 20px;
+            padding-right: 138px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+
+      
